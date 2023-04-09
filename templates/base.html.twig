@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}My Fruits App{% endblock %}</title>
+        {{ encore_entry_link_tags('app') }} 
+    </head>
+    <body>
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+
+        {{ encore_entry_script_tags('app') }} 
+    </body>
+</html>
