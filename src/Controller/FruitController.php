@@ -29,4 +29,12 @@ class FruitController extends AbstractController
     {
         return $this->render('fruit/favorite_fruits.html.twig');
     }
+
+    /**
+     * @Route("/{any}", name="redirect_to_index", requirements={"any"=".+"})
+     */
+    public function redirectToIndex(): Response
+    {
+        return $this->redirectToRoute('fruits_index');
+    }
 }
